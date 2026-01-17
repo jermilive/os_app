@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firefox — New Tab</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Optional: Add a favicon if you want (Firefox fox icon) -->
+    <link
+      rel="icon"
+      href="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
+    />
+  </head>
+  <body>
+    <div class="desktop">
+      <!-- Fake Firefox window / new tab content -->
+      <div class="fake-browser-window">
+        <!-- Fake address bar / toolbar -->
+        <div class="browser-toolbar">
+          <div class="nav-buttons">
+            <span class="nav-btn back">←</span>
+            <span class="nav-btn forward">→</span>
+            <span class="nav-btn refresh">↻</span>
+          </div>
+          <div class="address-bar">
+            <span class="lock-icon">🔒</span>
+            <input
+              type="text"
+              placeholder="Search with Firefox or enter address"
+              value="about:newtab"
+            />
+          </div>
+          <div class="menu-btn">≡</div>
+        </div>
+
+        <!-- Main new tab content (Firefox Home style) -->
+        <div class="new-tab-content">
+          <div class="firefox-logo">
+            <!-- Simple text logo or use real SVG if you want -->
+            <h1>Firefox</h1>
+          </div>
+
+          <div class="search-container">
+            <input type="search" placeholder="Search the Web" autofocus />
+            <button>Search</button>
+          </div>
+
+          <!-- Fake top sites / shortcuts tiles -->
+          <div class="top-sites">
+            <h2>Top Sites</h2>
+            <div class="tiles-grid">
+              <div class="tile">
+                <img src="https://www.google.com/favicon.ico" alt="Google" />
+                <span>Google</span>
+              </div>
+              <div class="tile">
+                <img
+                  src="https://www.youtube.com/s/desktop/9a8a5a0a/img/favicon_32x32.png"
+                  alt="YouTube"
+                />
+                <span>YouTube</span>
+              </div>
+              <div class="tile">
+                <img src="https://www.wikipedia.org/static/favicon/wikipedia.ico" alt="Wikipedia" />
+                <span>Wikipedia</span>
+              </div>
+              <div class="tile">
+                <img src="https://abs.twimg.com/favicons/twitter.ico" alt="X" />
+                <span>X</span>
+              </div>
+              <div class="tile">
+                <img src="https://reddit.com/favicon.ico" alt="Reddit" />
+                <span>Reddit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional: Fake sponsored / pocket section -->
+          <div class="sponsored">
+            <h3>Recommended by Pocket</h3>
+            <p>Some interesting reads appear here...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reuse the OS taskbar -->
+      <div class="taskbar">
+        <div class="start-button">Start</div>
+        <div class="taskbar-apps">
+          <div class="taskbar-icon active">
+            <img src="https://img.icons8.com/?size=96&id=82781&format=png" alt="Browser" />
+          </div>
+          <!-- Add others if you want -->
+        </div>
+        <div class="system-tray">
+          <span class="tray-item">January 17, 2026 5:36 PM</span>
+          <span class="tray-item">Wi-Fi</span>
+          <span class="tray-item">🔋 92%</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

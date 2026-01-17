@@ -54,6 +54,27 @@ html {
   word-break: break-all;
 }
 
+.icon-link {
+  display: block;
+  text-decoration: none;
+  color: inherit; /* Keeps the white text color */
+  height: 100%;
+  width: 100%;
+  border-radius: 8px; /* Matches the icon hover radius */
+}
+
+.icon-link:hover {
+  /* The hover is already on .icon:hover, so this isn't strictly needed */
+  /* But we can reinforce cursor if desired */
+  cursor: pointer;
+}
+
+/* Ensure the span and img don't get extra spacing issues */
+.icon-link img,
+.icon-link span {
+  pointer-events: none; /* Prevents double-click weirdness */
+}
+
 /* ─── Taskbar ───────────────────────────────────────────── */
 .taskbar {
   position: fixed;
@@ -199,4 +220,56 @@ html {
   height: 1px;
   background: rgba(255, 255, 255, 0.08);
   margin: 8px 0;
+}
+
+.fake-window {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 900px;
+  background: rgba(40, 40, 50, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px #000c;
+}
+
+.title-bar {
+  height: 36px;
+  background: rgba(30, 30, 40, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.window-content {
+  padding: 30px;
+  min-height: 300px;
+}
+
+.drive-icon,
+.file-icon {
+  display: inline-block;
+  width: 110px;
+  text-align: center;
+  margin: 12px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.drive-icon:hover,
+.file-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
 }

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="fake-window">
+        <div class="title-bar">Games Library</div>
+        <div
+          class="window-content"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 20px;
+            padding: 30px;
+          "
+        >
+          <div class="tile">
+            <img src="https://img.icons8.com/?size=96&id=82781&format=png" alt="Game" />
+            <a href="/home/jay/Documents/web_dev/os_app/rock_paper_scissors.html">
+              <div>Rock Paper Scissors</div>
+            </a>
+          </div>
+
+          <div class="tile" style="text-align: center">
+            <img src="https://img.icons8.com/?size=96&id=108784&format=png" alt="Game" />
+            <div>Minesweeper</div>
+          </div>
+          <div class="tile" style="text-align: center">
+            <img src="https://img.icons8.com/?size=96&id=82781&format=png" alt="Game" />
+            <div>Solitaire</div>
+          </div>
+          <!-- Real Games -->
+
+          <!-- Placeholder for games -->
+        </div>
+      </div>
+      <div class="taskbar"><!-- your taskbar --></div>
+    </div>
+    <!-- Taskbar -->
+    <div class="taskbar">
+      <div class="start-button" id="startBtn">Start</div>
+
+      <div class="taskbar-apps">
+        <!-- your existing taskbar icons -->
+      </div>
+
+      <div class="system-tray">
+        <span class="tray-item clock">Loading...</span>
+        <span class="tray-item">Wi-Fi</span>
+        <span class="tray-item">🔋 87%</span>
+      </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+      <div class="start-header">
+        <div class="user-avatar"></div>
+        <div class="user-name">J</div>
+      </div>
+      <div class="start-programs">
+        <a href="explorer.html" class="start-item">🗄️ File Explorer</a>
+        <a href="browser.html" class="start-item">🌐 Web Browser</a>
+        <a href="notepad.html" class="start-item">📝 Notepad</a>
+        <a href="games.html" class="start-item">🎮 Games</a>
+        <div class="start-item separator"></div>
+        <a href="settings.html" class="start-item">⚙️ Settings</a>
+        <a href="power.html" class="start-item">⏻ Power</a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

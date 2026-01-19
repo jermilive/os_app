@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untitled - Notepad</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="fake-window" style="width: 700px; height: 500px; top: 80px">
+        <div class="title-bar">Untitled - Notepad</div>
+        <textarea
+          style="
+            width: 100%;
+            height: calc(100% - 36px);
+            background: #1e1e1e;
+            color: #e0e0e0;
+            border: none;
+            padding: 12px;
+            font-family: Consolas, monospace;
+            resize: none;
+          "
+          placeholder="Type here..."
+        ></textarea>
+      </div>
+      <div class="taskbar"><!-- your taskbar --></div>
+    </div>
+    <!-- Taskbar -->
+    <div class="taskbar">
+      <div class="start-button" id="startBtn">Start</div>
+
+      <div class="taskbar-apps">
+        <!-- your existing taskbar icons -->
+      </div>
+
+      <div class="system-tray">
+        <span class="tray-item clock">Loading...</span>
+        <span class="tray-item">Wi-Fi</span>
+        <span class="tray-item">🔋 87%</span>
+      </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+      <div class="start-header">
+        <div class="user-avatar"></div>
+        <div class="user-name">J</div>
+      </div>
+      <div class="start-programs">
+        <a href="explorer.html" class="start-item">🗄️ File Explorer</a>
+        <a href="browser.html" class="start-item">🌐 Web Browser</a>
+        <a href="notepad.html" class="start-item">📝 Notepad</a>
+        <a href="games.html" class="start-item">🎮 Games</a>
+        <div class="start-item separator"></div>
+        <a href="settings.html" class="start-item">⚙️ Settings</a>
+        <a href="power.html" class="start-item">⏻ Power</a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

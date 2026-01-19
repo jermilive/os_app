@@ -6,6 +6,7 @@
     <title>FauxOS Desktop</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <!-- <script src="app.js"></script> -->
   <body>
     <!-- Desktop background -->
     <div class="desktop">
@@ -39,43 +40,40 @@
         </a>
       </div>
 
-      <!-- Taskbar -->
-      <div class="taskbar">
-        <div class="start-button">Start</div>
+    <!-- Taskbar -->
+    <div class="taskbar">
+      <div class="start-button" id="startBtn">Start</div>
 
-        <div class="taskbar-apps">
-          <div class="taskbar-icon active">
-            <img src="https://img.icons8.com/?size=96&id=82781&format=png" alt="Browser" />
-          </div>
-          <div class="taskbar-icon">
-            <img src="https://img.icons8.com/?size=96&id=108784&format=png" alt="File Explorer" />
-          </div>
-        </div>
-
-        <div class="system-tray">
-          <span class="tray-item">12:45 PM</span>
-          <span class="tray-item">Wi-Fi</span>
-          <span class="tray-item">🔋 87%</span>
-        </div>
+      <div class="taskbar-apps">
+        <!-- your existing taskbar icons -->
       </div>
 
-      <!-- Fake start menu (just for looks - no click functionality) -->
-      <div class="start-menu">
-        <div class="start-header">
-          <div class="user-avatar"></div>
-          <div class="user-name">J</div>
-        </div>
-        <div class="start-programs">
-          <div class="start-item">🗄️ File Explorer</div>
-          <div class="start-item">🌐 Web Browser</div>
-          <div class="start-item">📝 Notepad</div>
-          <div class="start-item">🎮 Games</div>
-          <div class="start-item separator"></div>
-          <div class="start-item">⚙️ Settings</div>
-          <div class="start-item">⏻ Power</div>
-        </div>
+      <div class="system-tray">
+        <span class="tray-item clock">Loading...</span>
+        <span class="tray-item">Wi-Fi</span>
+        <span class="tray-item">🔋 87%</span>
       </div>
     </div>
-    <script src=""></script>
+    <!-- Start Menu -->
+<div class="start-menu" id="startMenu">
+  <div class="start-header">
+    <div class="user-avatar"></div>
+    <div class="user-name">J</div>
+  </div>
+  <div class="start-programs">
+    <a href="explorer.html" class="start-item">🗄️ File Explorer</a>
+    <a href="browser.html" class="start-item">🌐 Web Browser</a>
+    <a href="notepad.html" class="start-item">📝 Notepad</a>
+    <a href="games.html" class="start-item">🎮 Games</a>
+    <div class="start-item separator"></div>
+    <a href="settings.html" class="start-item">⚙️ Settings</a>
+    <a href="power.html" class="start-item">⏻ Power</a>
+  </div>
+</div>
+    </div>
+  </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>

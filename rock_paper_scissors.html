@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors - Canvas Edition</title>
+    <link rel="stylesheet" href="rock_paper_scissors_style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Rock Paper Scissors</h1>
+
+      <div class="score-board">
+        <div class="score">
+          <span>You</span>
+          <div id="player-score">0</div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="score">
+          <span>Computer</span>
+          <div id="computer-score">0</div>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+      <div class="choices">
+        <button data-choice="rock">✊ Rock</button>
+        <button data-choice="paper">✋ Paper</button>
+        <button data-choice="scissors">✌️ Scissors</button>
+      </div>
+
+      <div id="message">Click a choice to play!</div>
+
+      <button id="resetBtn" class="reset">Reset Game</button>
+    </div>
+
+    <script src="rock_paper_scissors_app.js"></script>
+  </body>
+</html>

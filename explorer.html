@@ -3,35 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This PC</title>
+    <title>File Explorer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="desktop">
-      <!-- Reuses background -->
-
-      <!-- Fake window-like container -->
       <div class="fake-window">
-        <div class="title-bar">This PC</div>
-        <div class="window-content">
-          <div class="drive-icon">
-            <img src="https://img.icons8.com/?size=96&id=82790&format=png" alt="Local Disk" />
-            <span>Local Disk (C:)</span>
-            <small>512 GB free of 1 TB</small>
+        <div class="title-bar">File Explorer</div>
+        <div class="window-content documents-grid">
+          <div class="file-icon">
+            <img src="https://img.icons8.com/?size=96&id=82784&format=png" alt="Documents" />
+            <span>Documents</span>
           </div>
-          <div class="drive-icon">
-            <img src="https://img.icons8.com/?size=96&id=108784&format=png" alt="Data" />
-            <span>Data (D:)</span>
-            <small>1.2 TB free of 2 TB</small>
+          <div class="file-icon">
+            <img src="https://img.icons8.com/?size=96&id=108784&format=png" alt="Downloads" />
+            <span>Downloads</span>
           </div>
-          <div class="drive-icon">
-            <img src="https://img.icons8.com/?size=96&id=102546&format=png" alt="Network" />
-            <span>Network</span>
+          <div class="file-icon">
+            <img src="https://img.icons8.com/?size=96&id=82790&format=png" alt="This PC" />
+            <span>This PC</span>
           </div>
         </div>
       </div>
-
-    <!-- Taskbar -->
+      <!-- Taskbar -->
     <div class="taskbar">
       <div class="start-button" id="startBtn">Start</div>
 
@@ -45,7 +39,6 @@
         <span class="tray-item">🔋 87%</span>
       </div>
     </div>
-
     <!-- Start Menu -->
 <div class="start-menu" id="startMenu">
   <div class="start-header">
@@ -62,8 +55,6 @@
     <a href="power.html" class="start-item">⏻ Power</a>
   </div>
 </div>
-      </div>
-    </div>
     <script src="app.js"></script>
   </body>
 </html>
